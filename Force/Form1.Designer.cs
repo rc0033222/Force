@@ -79,6 +79,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -88,7 +89,6 @@
             this.label3.Size = new System.Drawing.Size(22, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "F =";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -98,7 +98,6 @@
             this.label4.Size = new System.Drawing.Size(15, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "N";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox1
             // 

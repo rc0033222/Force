@@ -29,13 +29,24 @@ namespace Force
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                double F = Convert.ToDouble(textBox2.Text);
+                double a = Convert.ToDouble(textBox1.Text);
+                double fx = F * cos(a);
+                double fy = F * sin(a);
+                label2.Text = "Fx = " + fx;
+                label1.Text = "Fy = " + fy;
 
-        }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
+            }
+            catch
+            {
+                label1.Text = "Fx= Enter a Number!";
+                label2.Text = "Fy= Enter a Number!";
+            }
 
         }
     }
